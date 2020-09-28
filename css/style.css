@@ -1,0 +1,721 @@
+
+/* --------------------------------------------------------------------------------- */
+/* 1. CSS Reset
+-------------------------------------------------------------------------------*/
+
+* {
+	padding:0;
+	margin:0;
+}
+body {
+	color:#fff;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	position:relative;
+	background:#000;
+	width:100%;
+	height:100%;
+	overflow: scroll;
+	overflow-x: hidden;
+}
+a {
+	text-decoration:none;
+	color:#fff;
+	outline:none;
+}
+
+
+
+/*----------------------------------------------------
+ 2.	Document Setup
+------------------------------------------------------*/
+
+.spHeight{
+	padding-top:63px;
+}
+
+.noMar{
+	margin:0 !important;
+}
+.noPadd{
+	padding:0px !important;
+}
+
+.container .row{
+	margin:0px;
+}
+
+p{
+	font-family: 'Open Sans', sans-serif;
+	font-size:14px;
+	line-height:21px;
+	font-weight:400;
+	padding-bottom:22px;
+	margin:0px;
+}
+h1{
+	font-family: 'Open Sans', sans-serif;
+	font-size:80px;
+	line-height:90px;
+	font-weight:700;
+	margin:0px;
+	padding-bottom:8px;
+}
+h2{
+	font-family: 'Kumbh Sans', sans-serif;;
+	font-size:36px;
+	line-height:38px;
+	padding-bottom:0px;
+	font-weight:300;
+	text-transform:uppercase;
+	margin:0px;
+}
+h3{
+	font-family: 'Open Sans', sans-serif;
+	font-size:24px;
+	line-height:30px;
+	padding-bottom:6px;
+	font-weight:400;
+	margin:0px;
+}
+h4{
+	font-family: 'Open Sans', sans-serif;
+	font-size:19px;
+	line-height:24px;
+	padding-bottom:6px;
+	font-weight:600;
+	margin:0px;
+}
+h5{
+	font-family: 'Open Sans', sans-serif;
+	font-size:16px;
+	line-height:24px;
+	padding-bottom:6px;
+	font-weight:400;
+	margin:0px;
+}
+
+h4.subHeading{
+	font-weight:600;
+	font-size:18px;
+	padding-bottom:22px;
+}
+
+.heading{
+	text-align:center;
+	padding-bottom:45px;
+}
+
+.topmar{
+	margin-top:20px;
+}
+
+
+
+/*----------------------------------------------------
+ 3.	Header Part
+------------------------------------------------------*/
+header{
+	position:relative;
+}
+
+#banner {
+	height: 800px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-image: url(https://images.theweek.com/sites/default/files/styles/tw_image_9_4/public/istock-527028804.jpg?itok=VtQBDIcm&resize=1260x560) ;
+}
+.bannerText{
+	text-align:center;
+	font-family: inherit;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.3);
+	animation: fadeIn ease 5s;
+	-webkit-animation: fadeIn ease 5s;
+	-moz-animation: fadeIn ease 5s;
+	-o-animation: fadeIn ease 5s;
+	-ms-animation: fadeIn ease 5s;
+}
+
+@keyframes fadeIn {
+	0% {opacity:0;}
+	100% {opacity:1;}
+	}
+	
+	@-moz-keyframes fadeIn {
+	0% {opacity:0;}
+	100% {opacity:1;}
+	}
+	
+	@-webkit-keyframes fadeIn {
+	0% {opacity:0;}
+	100% {opacity:1;}
+	}
+	
+	@-o-keyframes fadeIn {
+	0% {opacity:0;}
+	100% {opacity:1;}
+	}
+	
+	@-ms-keyframes fadeIn {
+	0% {opacity:0;}
+	100% {opacity:1;}
+	}
+.bannerText h1{
+	border: 2px solid #D43F52;
+	color: #D43F52;
+	display: inline-block;
+	letter-spacing: 6px;
+	padding: 25px 35px;
+	margin: 30px 0;
+	font-size: 36px;
+	text-transform:uppercase;
+	background: rgba(0, 0, 0, 0.6);
+
+}
+.bannerText h2{
+	font-size:34px;
+	text-transform:none;
+}
+
+
+/*----------------------------------------------------
+ 6.	About me Style
+------------------------------------------------------*/
+
+.aboutme{
+	background:#FFD89A;
+	color: #474D5D;
+	position:relative;
+}
+.aboutme .container{
+	padding-top:85px ;
+	padding-bottom:93px ;
+}
+
+
+.aboutTop{
+	background:#00bdbd;
+	height:60px;
+}
+.spHeight .aboutTop{
+	margin-top:-62px !important;
+}
+
+.bntDownload{
+	font-size:16px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:700;
+	background:#474D5D;
+	padding:16px 22px;
+	display:inline-block;
+}
+.bntDownload:hover{
+	background:#373d4c;
+	color:#CCCCCC;
+	text-decoration:none;
+}
+
+
+/*----------------------------------------------------
+ 7.	Technical Skills Style
+------------------------------------------------------*/
+.addspace{
+	height:60px;
+	background:#eeeeee;
+}
+
+
+#node {
+	height: 152px;
+	width: 152px;
+}
+
+.technical{
+	background:#eeeeee;
+	color:#474d5d;
+}
+.technical .container{
+	padding-top:85px ;
+	padding-bottom:69px ;
+}
+.technical .heading p{
+	padding-bottom:41px;
+}
+
+.technical p{
+	color:#474d5d;
+}
+.technical h2{
+	color:rgb(212,63,82);
+}
+
+.technical .skillsArea{
+	padding:0px;
+}
+.technical .skills{
+	margin:0 auto;
+	margin-bottom:23px;
+	text-align:center;
+	padding:0px;
+	float:none;
+}
+.technical .skills p{
+	color:#84868d;
+	font-size:13px;
+	line-height:18px;
+	text-align:center;
+}
+.technical .skills img{
+	margin:0 auto;
+	margin-bottom:33px;
+	width:100%;
+	max-width:152px;
+}
+
+.technical .skills h4{
+	font-weight:700;
+	text-transform:uppercase;
+}
+
+
+.skilBg{
+	background:url(../images/skills.png) no-repeat 0 0;
+}
+
+
+.chart {
+  position: relative;
+  display: inline-block;
+  width: 152px;
+  height: 152px;
+  margin-bottom: 26px;
+  text-align: center;
+}
+.chart canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.percent {
+  display: inline-block;
+  font-size:21px;
+  color:#474d5d;
+  line-height: 152px;
+  z-index: 2;
+}
+.percent:after {
+  content: '%';
+  margin-left: 0.1em;
+  font-size: .8em;
+}
+.angular {
+  margin-top: 100px;
+}
+.angular .chart {
+  margin-top: 0;
+}
+
+
+/*----------------------------------------------------
+ 8.	Work Experience Style
+------------------------------------------------------*/
+.exprience{
+	background:#fff;
+}
+.exprience .container{
+	padding-top:85px ;
+	padding-bottom:90px ;
+}
+
+.exprience h2{
+	color: rgb(212,63,82);
+}
+.exprience p{
+	color:#84868d;
+	line-height:18px;
+}
+
+.exprience ul{
+	color:#84868d;
+	font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    padding-bottom: 22px;
+    margin: 0px;
+
+}
+
+.exprience .heading ul{
+	padding-bottom:41px;
+}
+
+
+.exprience .heading p{
+	padding-bottom:41px;
+}
+
+.exprience h4{
+	font-weight:700;
+}
+
+.workDetails .rightArea{
+	border-left: solid 1px #eaeaea;
+	padding-bottom:47px;
+}
+.workDetails:last-child .rightArea{
+	padding-bottom:0px;
+}
+.workYear{
+	font-size:17px;
+	color:#fff;
+	background: rgb(212,63,82);
+	text-align:center;
+	width:120px;
+	height:120px;
+	padding:40px 0 40px 0;
+
+	
+	-webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+
+.arrowpart{
+	float:left;
+	width:15px;
+	height:50px;
+	background:url(../images/arrow-left.png) no-repeat 0 23px;
+}
+.exCon{
+	width:auto;
+	background:#f3f3f3;
+	border-bottom:solid 4px #eeeeee;
+	padding:22px 47px 6px 47px;
+	margin-left:15px;
+	text-align:left;
+}
+
+.exCon p{
+	color:#84868d;
+	line-height:21px;
+}
+.exCon h4{
+	color:#474d5d;
+	padding-bottom:3px;
+}
+.exCon h5{
+	color:#474d5d;
+}
+
+
+
+/*----------------------------------------------------
+ 9.	Education Style
+------------------------------------------------------*/
+.education{
+	background:#eeeeee;
+}
+.education .container{
+	padding-top:85px ;
+	padding-bottom:90px ;
+}
+
+.education h2{
+	color:rgb(212,63,82);
+}
+.education p{
+	color:#84868d;
+	line-height:18px;
+}
+.education .heading p{
+	padding-bottom:41px;
+}
+
+.education h4{
+	font-weight:700;
+}
+
+
+.education .arrowpart{
+	background:url(../images/arrow-left-light.png) no-repeat 0 23px;
+}
+.education .exCon{
+	background:#fafafa;
+	border-bottom:solid 4px #e8e7e7;
+}
+
+.education .workDetails .rightArea{
+	border-left-color:#e5e4e4;
+}
+
+
+
+
+/*----------------------------------------------------
+ 10. Portfolio Style
+------------------------------------------------------*/
+.project {
+	padding-top:85px;
+	padding-bottom:90px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url(https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/pf-chim-036.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=1ee26973b113f2cbabcd45a595551859);
+}
+
+.port1 h2 {
+	font-weight: 800;
+	font-size: 30px;
+	text-align: center;
+	text-transform: uppercase;
+	color: white;
+	margin-bottom: 50px;
+
+}
+
+.port2 h2 {
+	font-weight: 800;
+	font-size: 30px;
+	text-align: center;
+	text-transform: uppercase;
+	color: white;
+	margin-bottom: 50px;
+
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  border-radius: 8px;
+}
+
+.btn-group-lg>.btn, .btn-lg {
+	margin-bottom: 2px
+}	
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.port1:hover .image {
+  opacity: 0.3;
+}
+
+.port2:hover .image {
+	opacity: 0.3;
+  }
+
+.port1:hover .middle {
+  opacity: 1;
+}
+
+.port2:hover .middle {
+	opacity: 1;
+  }
+
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+/* end of hover effect */
+
+
+/*----------------------------------------------------
+ 11. Get in tuch Style
+------------------------------------------------------*/
+
+.contactDetails{
+	background:#474d5d;
+}
+.contactDetails .container{
+	padding-top:85px;
+	padding-bottom:90px;
+	color: rgb(212,63,82);
+
+}
+.contactDetails h3{
+	font-weight:600;
+	text-transform:uppercase;
+	padding-bottom:15px;
+}
+.contactDetails p{
+	color:#93959c;
+	line-height:19px;
+	padding-bottom:14px;
+}
+.contactDetails p a{
+	color:#93959c;
+}
+.contactDetails p a:hover{
+	color:#a9abb0;
+	text-decoration:none;
+}
+
+.contactDetails i{
+	padding-right:15px;
+}
+
+
+.conForm input{
+	background:#585f73;
+	color:#93959c;
+	padding:15px 30px;
+	border:none;
+	margin-right:3%;
+	margin-bottom:30px;
+	outline:none;
+	font-style:italic;
+}
+.conForm input.noMarr{
+	margin-right:0px;
+}
+
+.conForm textarea{
+	background:#585f73;
+	color:#93959c;
+	padding:15px 30px;
+	border:none;
+	margin-bottom:40px;
+	outline:none;
+	height:100px;
+	font-style:italic;
+}
+
+
+.conForm .submitBnt{
+	background:#ff675f;
+	font-family: 'Open Sans', sans-serif;
+	color:#fff;
+	font-size:16px;
+	font-weight:600;
+	text-align:center;
+	float:right;
+	margin:0px;
+}
+.conForm .submitBnt:hover{
+	background:#f5534b;
+}
+
+.textGroup{
+	position:relative !important;
+	display: inline-block;
+	padding-left:0px !important;
+}
+
+#success_page{
+	color: #00bdbd;
+	font-weight: 500;
+}
+.error_message{
+	color: #ff675f;
+	padding-bottom: 15px;
+	font-weight: 500;
+}
+#success_page h3{
+	font-size:17px;
+}
+
+
+	
+/*---------------------------------------------------------------------------------
+ 13. Responsive style
+-------------------------------------------------------------------------------*/
+
+@media screen and (min-width: 1200px) {
+	.workYear {
+	width:140px;
+	height:140px;
+	padding-top:50px;
+   }
+	.education .workYear {
+	padding-top:58px;
+   }
+   }
+	@media screen and (max-width: 991px) {
+	.navbar.navbar-inverse.navbar-static-top a {
+	padding-left:18px;
+	padding-right:18px;
+   }
+	.bannerText {
+	padding-left:25px;
+	padding-right:25px;
+	
+   }
+	.bannerText h1 {
+	font-size:65px;
+	line-height:71px;
+   }
+	.bannerText h2 {
+	font-size:28px;
+   }
+	.proPic {
+	text-align:center;
+   }
+   .workDetails .rightArea {
+	border-left:none;
+   }
+
+   }
+	@media screen and (max-width: 770px) {
+	body {
+	min-height:700px;
+   }
+   .arrowpart {
+	float:none;
+	width:100%;
+	height:40px;
+	background:url(../images/arrow-top.png) no-repeat 50% 100%;
+   }
+	.education .arrowpart {
+	background:url(../images/arrow-top-light.png) no-repeat 50% 100%;
+   }
+	.exCon {
+	margin-left:0px;
+   }
+}
+
+	.workYear {
+	margin:0 auto;
+	margin-top: 5px;
+   }
+	.workDetails .rightArea {
+	border-left:none;
+   }
+	
+	@media screen and (max-width: 650px) {
+	.bannerText {
+	top: 25%;
+	padding-top:15px;
+	padding-bottom:15px;
+   }
+	.bannerText h1 {
+	font-size: 42px;
+	line-height: 48px;
+   }
+	.bannerText h2 {
+	font-size: 18px;
+	line-height:24px;
+   }
+   }
+	@media screen and (max-width: 400px) {
+	.aboutme img {
+	width:100%;
+   }
+}
