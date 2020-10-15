@@ -17,20 +17,21 @@
     </div>
     <!--banner end-->
     <!--nav start-->
+    
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
         <button class="navbar-toggler wbdv-field wbdv-hamburger" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse navbar-nav" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav justify-content-around w-100">
-                <li><a class="nav-link btn-lg btn-outline-secondary text-lg nav-item active " href="#wrapper">Home</a></li>
-                <li><a class="nav-link btn-lg btn-outline-secondary text-lg nav-item" href="#aboutme">About</a></li>
-                <li><a class="nav-link btn-lg btn-outline-secondary text-lg nav-item" href="#technical">Skills</a></li>
-                <li><a class="nav-link btn-lg btn-outline-secondary text-lg nav-item" href="#exprience">Experience</a></li>
-                <li><a class="nav-link btn-lg btn-outline-secondary text-lg nav-item" href="#education">Education</a></li>
-                <li><a class="nav-link btn-lg btn-outline-secondary text-lg nav-item" href="#portfolio">Portfolio</a></li>
-                <li><a class="nav-link btn-lg btn-outline-secondary text-lg nav-item" href="#contact">Contact</a></li>
+                <li class="nav-item active"><a class="nav-link btn-lg btn-outline-secondary text-lg" href="#wrapper">Home</a></li>
+                <li class="nav-item"><a class="nav-link btn-lg btn-outline-secondary text-lg nav-item" href="#aboutme">About</a></li>
+                <li class="nav-item"><a class="nav-link btn-lg btn-outline-secondary text-lg nav-item" href="#technical">Skills</a></li>
+                <li class="nav-item"><a class="nav-link btn-lg btn-outline-secondary text-lg nav-item" href="#exprience">Experience</a></li>
+                <li class="nav-item"><a class="nav-link btn-lg btn-outline-secondary text-lg nav-item" href="#education">Education</a></li>
+                <li class="nav-item"><a class="nav-link btn-lg btn-outline-secondary text-lg nav-item" href="#portfolio">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link btn-lg btn-outline-secondary text-lg nav-item" href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -285,8 +286,16 @@
     </div>
   </section>
   <!--contact end-->
+  
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-</body>
+    <!-- collapse menu -->
+    <script>
+      $(".navbar-nav li a").click(function(event) {
+    if (!$(this).parent().hasClass('dropdown'))
+        $(".navbar-collapse").collapse('hide');
+      });
+      </script>
+  </body>
 </html>
